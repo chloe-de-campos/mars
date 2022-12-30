@@ -396,6 +396,7 @@ function App() {
     window.focus();
 
     if (document.getElementById('sendinterface')){
+      setAlignment('send')
       document.getElementById('sendinterface').scrollIntoView({behavior: "smooth"});
     }
   }
@@ -552,7 +553,9 @@ function App() {
 
                     
                 </div>
-              
+                <p id='decodedmessage'> 
+                    
+                    </p>
 
                 <div id="codepopup" style={{visibility: 'hidden', display: 'flex', flexDirection: 'column', alignItems:'center'}}>
                   <div style={{textAlign: 'left', fontSize: "12pt", fontWeight: "300"}}> 
@@ -566,9 +569,7 @@ function App() {
                 </div>
 
 
-                <p id='decodedmessage'> 
-                    
-                    </p>
+             
                     <div style={{display: 'flex', flexDirection: 'row', width: '100%', justifyContent:'space-around'}}>
                   {/* <Button variant="outlined" style={{borderColor:"#FFFFFF",  color:"#FFFFFF",  margin: "15px ", padding: '10px 50px 10px 50px',  textTransform: 'none',  fontSize: '16px'}} onClick={() => ScrollLeft()}>Send a Message</Button> */}
                     {/* <Button disabled  variant="outlined" style={{borderColor:"#FFFFFF", color:"#FFFFFF",  margin: "15px ", padding: '10px 50px 10px 50px',  textTransform: 'none',  fontSize: '16px'}} onClick={() => ScrollRight()}>Receive a Message</Button> */}
