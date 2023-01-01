@@ -444,7 +444,7 @@ function App() {
     <div className="App">
  
       <div id="app-background" className ="App-middle">
-        <div id="title"  style={{width: "70%", textAlign: "left", fontWeight: '650', margin: '12vmax'}}>
+        <div id="title"  style={{scrollSnapAlign:  "center", width: "70%", textAlign: "left", fontWeight: '650', margin: '12vmax'}}>
         <img id="marspic" style={{position: 'fixed', zIndex: '2', width: '15vmax', top: '-25vmax', right:'15%'}} src="marsonstring.png"></img>
           <div style={{fontSize: '7vmax', zIndex: '3', width: '70%', position: 'relative', left:0}}> 
           Welcome to Mars 

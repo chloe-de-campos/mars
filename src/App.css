@@ -1,6 +1,18 @@
 .App {
   text-align: center;
+  scrollbar-width: none;
   /* background-color: #282c34; */
+  /* scroll-snap-type: y mandatory; */
+  
+}
+::-webkit-scrollbar { 
+  display: none; 
+  }
+  
+html{
+  scrollbar-width: 100px;
+  /* background-color: #282c34; */
+  /* scroll-snap-type: y mandatory; */
 }
 
 body{ 
@@ -34,6 +46,10 @@ body{
   color: #61dafb;
 }
 
+#App-background{
+  /* scrollbar-width: 100px; */
+}
+
 .App-middle {
   /* background-color: #282c34; */
   min-height: 100vh;
@@ -47,6 +63,7 @@ body{
 }
 
 .App-bottom {
+  scroll-snap-align: center;
   /* background-image: url("../public/marssurface.png");
   background-size:contain;
   background-repeat: no-repeat;
